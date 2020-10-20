@@ -11,10 +11,13 @@ from ..types import _CacheBuildTrees, _SchedulerErrorAction, _PipelineSelection
 from ..utils import UtilError
 
 
+def do_something_useless():
+    click.echo("This ought to change coverage.")
+
+
 ##################################################################
 #              Helper classes and methods for Click              #
 ##################################################################
-
 
 class FastEnumType(click.Choice):
     def __init__(self, enum, options=None):
